@@ -1,0 +1,107 @@
+section.section-panel
+    .panel-main.bg-white.panel-flex.p-0.panel-desc
+        .relative-block.p-15
+            .section-title-v1.mb-0 Фильтр
+            .panel-toggle--button 
+                +icon('down-arrow')
+        .panel-toggle--wrapper        
+            .panel-toggle.p-15 
+                .section-lk-inputs.row
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.lk-inputs--cols 
+                        .section-lk-input--wrapper 
+                            label Номер:
+                            input.section-lk-input(type="text" placeholder="Номер...")  
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.lk-inputs--cols
+                        .section-lk-input--wrapper 
+                            label Статус:
+                            .section-lk-input.section-lk-input-flex
+                                span Все 
+                                .section-lk-input--arrow 
+                                    +icon('down-arrow')
+                                ul.section-lk-select-list 
+                                    li.section-lk-select-item Все 
+                                    li.section-lk-select-item Все2 
+                                    li.section-lk-select-item Все3 
+                                    li.section-lk-select-item Все4
+                    .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols.mb-0
+                        .section-lk-input--wrapper 
+                            label Интервал:
+                            .section-lk-input.section-lk-input-flex
+                                span Все 
+                                .section-lk-input--arrow 
+                                    +icon('down-arrow')
+                                ul.section-lk-select-list 
+                                    li.section-lk-select-item.calendar-destroy День 
+                                    li.section-lk-select-item.calendar-destroy Месяц 
+                                    li.section-lk-select-item.calendar-destroy Год
+                    .col-xl-8.col-lg-8.col-md-6.col-sm-6.lk-inputs--cols.mb-0
+                        .section-lk-input--wrapper 
+                            label Дата:
+                            .section-lk-input--date
+                                .section-lk-input--date__icon.calendar-interval
+                                    input.section-lk-input.date-start(type="text") 
+                                    .section-lk-input--date__icon--block 
+                                        +icon('calendar')
+                                .section-lk-input--date__icon.calendar-interval  
+                                    input.section-lk-input.date-end(type="text") 
+                                    .section-lk-input--date__icon--block 
+                                        +icon('calendar') 
+    .panel-main.bg-white.panel-flex.p-0.panel-mobile
+        .relative-block.p-15
+            .section-title-v1.mb-0 Запрос в техподдержку
+            .panel-toggle--button__mobile
+                +icon('fill')
+        .panel-toggle--wrapper        
+            .panel-toggle.p-15 
+                .section-lk-inputs.row
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.lk-inputs--cols 
+                        .section-lk-input--wrapper 
+                            label Номер:
+                            input.section-lk-input(type="text" placeholder="Номер...")  
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.lk-inputs--cols
+                        .section-lk-input--wrapper 
+                            label Статус:
+                            .section-lk-input.section-lk-input-flex
+                                span Все 
+                                .section-lk-input--arrow 
+                                    +icon('down-arrow')
+                                ul.section-lk-select-list 
+                                    li.section-lk-select-item Все 
+                                    li.section-lk-select-item Все2 
+                                    li.section-lk-select-item Все3 
+                                    li.section-lk-select-item Все4
+                    .col-xl-4.col-lg-4.col-md-12.col-sm-12.lk-inputs--cols.mb-0.col-mb-ot
+                        .section-lk-input--wrapper 
+                            label Интервал:
+                            .section-lk-input.section-lk-input-flex
+                                span Все 
+                                .section-lk-input--arrow 
+                                    +icon('down-arrow')
+                                ul.section-lk-select-list 
+                                    li.section-lk-select-item.calendar-destroy День 
+                                    li.section-lk-select-item.calendar-destroy Месяц 
+                                    li.section-lk-select-item.calendar-destroy Год
+                    .col-xl-8.col-lg-8.col-md-12.col-sm-12.lk-inputs--cols.mb-0
+                        .section-lk-input--wrapper 
+                            label Дата:
+                            .section-lk-input--date
+                                .section-lk-input--date__icon.calendar-interval  
+                                    input.section-lk-input.date-start(type="text") 
+                                    .section-lk-input--date__icon--block 
+                                        +icon('calendar')
+                                .section-lk-input--date__icon.calendar-interval      
+                                    input.section-lk-input.date-end(type="text") 
+                                    .section-lk-input--date__icon--block 
+                                        +icon('calendar')                                      
+                                                               
+                    
+            .panel-toggle-bottom.p-15  
+                .panel-buttons 
+                    .button-style-blue.h-44.mr-3 Найти 
+                    .button-style-black.h-44 Отмена 
+                .panel-toggle--button.panel-settings 
+                    +icon('sett')     
+    .button-style-blue.w-mc.mb-30(data-toggle="modal" data-target="#popup-obr") Добавить обращение                                                    
+        
+        
+

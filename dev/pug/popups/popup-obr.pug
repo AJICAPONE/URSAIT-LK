@@ -1,0 +1,36 @@
+#popup-obr.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-w-830(role='document')
+        form.modal-content
+            .popup-header
+                .form-title Создание обращения (Шаг 1)
+
+            .popup-middle
+                .col-xl-12.col-lg-12.col-md-12.col-sm-12.lk-inputs--cols.p-0 
+                        .section-lk-input--wrapper 
+                            label Заголовок:
+                            input.section-lk-input(type="text" placeholder="Укажите заголовок обращения") 
+                .popup-radio-inputs 
+                    .popup-radio-input--wrap
+                        label  
+                            .popup-radio-input-dot
+                            input.popup-radio-input(type="radio" name="popup_name")
+                            span Не могу оформить заказ
+                    .popup-radio-input--wrap 
+                        label 
+                            .popup-radio-input-dot
+                            input.popup-radio-input(type="radio" name="popup_name") 
+                            span Не работает форма обратной связи
+                    .popup-radio-input--wrap 
+                        label 
+                            .popup-radio-input-dot
+                            input.popup-radio-input(type="radio" name="popup_name") 
+                            span Не приходит код для подтверждения 
+                    .popup-radio-input--wrap 
+                        label 
+                            .popup-radio-input-dot
+                            input.popup-radio-input(type="radio" name="popup_name") 
+                            span Другое              
+            .popup-bottom
+                .panel-buttons
+                    .button-style-black.h-44.mr-3(data-dismiss="modal") Отмена
+                    .button-style-blue.h-44(data-dismiss="modal" data-toggle="modal" data-target="#popup-obr2") Далее          

@@ -1,0 +1,28 @@
+#popup-del-msg2.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-covid--wrap.popup-del-msg
+                h3.main-section--title--v2.font-size-25.mb-5 Оцените работу поддержки
+            .popup-checked-ocenka 
+                label.popup-checked--item 
+                    .popup-checked-del--dot 
+                    input.popup-checked-del--input(type="radio" name="del_status")
+                    img.popup-checked-del__img(src="./static/img/content/emoji/emoji1.png")
+                    .popup-checked-del__text Мне нравится
+                label.popup-checked--item
+                    
+                    .popup-checked-del--dot 
+                    input.popup-checked-del--input(type="radio" name="del_status")
+                    img.popup-checked-del__img(src="./static/img/content/emoji/emoji3.png")
+                    .popup-checked-del__text Затрудняюсь ответить
+                label.popup-checked--item 
+                    .popup-checked-del--dot 
+                    input.popup-checked-del--input(type="radio" name="del_status")
+                    img.popup-checked-del__img(src="./static/img/content/emoji/emoji2.png")
+                    .popup-checked-del__text Недоволен командой поддержки
+                         
+
+            .delete-choise-chat-msg(data-dismiss="modal" aria-label="Close") Удалить   
+                //- .delete-chat-msg
+                //-     .delete-choise-chat-msg.gogocar-red-button(data-dismiss="modal" aria-label="Close") Удалить
+                //-     .gogocar-gray-button(data-dismiss="modal" aria-label="Close") Отмена

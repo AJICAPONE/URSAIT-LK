@@ -1,0 +1,49 @@
+section.section1.bg-white.bg-border.p-30
+    .section-container 
+        .section-top.bb-0.mb-0
+            .profile-section-top--left 
+                .profile-section-top__img-change.s-120(style="background-image:url('static/img/general/ava.png')")
+                    input.profile-chnge-img#acc-img(type="file")
+                    .profile-change-placeholder
+                        +icon('photo')
+                        span Изменить фото
+                .profile-section-top__info
+                    .profile-section-top__name Михаил Кокорин
+                    .profile-section-top__status В сервисе 1 год 2 месяца
+            .profile-section-top--right 
+                .desk-save-button.button-style-blue.w-140.h-44 Сохранить
+                    
+
+        .section-bottom
+            .section-title-v1 Основные
+            .section-lk-inputs.row
+                .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Имя:
+                        input.section-lk-input(type="text" placeholder="Михаил")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Фамилия:
+                        input.section-lk-input(type="text" placeholder="Кокорин")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Новый пароль:
+                        input.section-lk-input(type="password" placeholder="*******") 
+                .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Email:
+                        input.section-lk-input(type="email" placeholder="Kokorin@gmail.com")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Телефон:
+                        input.section-lk-input(type="tel" data-mask="+7 (000) 000 00 00" placeholder="+7 (999) 123 45 67")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Подтвердите пароль:
+                        input.section-lk-input(type="password" placeholder="*******")
+                .col-xl-12.col-lg-12.col-md-12.col-sm-6.lk-inputs--cols 
+                    .section-lk-input--wrapper 
+                        label Адрес:
+                        input.section-lk-input(type="text" placeholder="Укажите ваш адрес")    
+            .mobile-save-button.button-style-blue.w-140.h-44.m-0-auto Сохранить                                                         
+    

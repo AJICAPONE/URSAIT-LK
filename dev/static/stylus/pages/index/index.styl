@@ -1,0 +1,746 @@
+.content-wrapper
+    display flex
+    margin 30px
+sidebar
+    height calc(100vh - 140px)
+.sidebar-content
+    display flex
+    flex-direction: column
+    justify-content: space-between
+    //background-color: #fff
+    border-radius: 10px
+    height 100%
+.sidebar-menu-item
+    display flex
+    align-items: center
+    padding: 20px
+    &:hover
+        background-color: #F9F9F9
+        span
+            font-family: MS600
+            color #272727
+    &:first-child
+        border-radius: 10px 10px 0 0
+
+    .icon
+        size(21px)
+        margin-right: 15px
+    span
+        font-family: MS500
+        color: rgba(39,39,39,0.5)
+        font-size: 14px
+.social-links--list
+    display flex
+    align-items: center
+    padding: 0 20px
+    margin-bottom: 20px
+.social-links--item
+    display flex
+    justify-content: center
+    align-items: center
+    size(34px)
+    min-width 34px
+    background-color: #2F80ED
+    border-radius: 10px
+    margin-right: 15px
+    transition: all linear .2s
+    cursor pointer
+    margin-bottom: 15px
+    &:hover
+        box-shadow: 0 0 8px 1px #2f80eda1;
+
+    .icon
+        size(18px)
+        fill: #fff
+    &:last-child
+        margin-right: 0
+.panel-links-list
+    display flex
+    align-items: center
+
+.panel-main
+    display flex
+    justify-content: space-between
+    align-items: center
+    border-radius: 10px
+    padding: 7px
+.panel-links-item
+    display flex
+    align-items: center
+    justify-content: center
+    height 36px
+    font-family: MS600
+    font-size: 13px
+    color: #272727
+    cursor pointer
+    padding 10px 15px
+    transition: all linear .2s
+    border-radius: 5px
+    margin-right: 10px
+    &:hover
+        background-color: #2F80ED
+        box-shadow: 0 0 8px 1px #2f80eda1;
+        color #fff
+.bg-white
+    background-color: #fff
+    // border-radius: 10px
+.blue-color
+    background-color: #2F80ED
+    color: #fff
+    box-shadow: 0 0 8px 1px #2f80eda1;
+.panel-logout
+    display flex
+    align-items: center
+    justify-content: center
+    height 36px
+    font-family: MS600
+    font-size: 13px
+    color: #FF4B55
+    cursor pointer
+    padding 10px 15px
+    transition: all linear .2s
+    border-radius: 5px
+    &:hover
+        background-color: #FF4B55
+        box-shadow: 0 0 8px 1px #FF4B55;
+        color #fff
+.section-top
+    display flex
+    justify-content: space-between
+    margin-bottom: 30px
+    padding-bottom: 30px
+    border-bottom: 1px solid rgba(39,39,39,0.1)
+.bg-border
+    border-radius: 10px
+.p-30
+    padding: 30px
+.profile-section-top--left
+    display flex
+    align-items: center
+.profile-section-top__img,.profile-section-top__img-change
+    position: relative
+    background-size: cover
+    background-repeat: no-repeat
+    size(80px)
+    border-radius: 10px
+    margin-right: 20px
+    &:before
+        content: '';
+        position: absolute;
+        right: 6px;
+        bottom -3px;
+        background-color: #2f80ed;
+        size(10px)
+        border-radius: 50%;
+.profile-section-top__img-change
+    &:before
+        display: none
+.profile-section-top__name
+    font-family: MS600
+    font-size: 17px
+    color: #272727
+    margin-bottom: 10px
+.profile-section-top__status
+    font-family: RB400
+    font-size: 14px
+    color: rgba(39,39,39,0.6)
+.panel-main
+    margin-bottom: 30px
+.profile-section-top__connect--item
+    display flex
+    justify-content: center
+    align-items center
+    background-color: #2F80ED
+    border-radius: 10px
+    size(34px)
+    transition: all linear .2s
+    margin-right: 25px
+    .icon
+        display flex
+        justify-content: center
+        size(18px)
+        fill: #fff
+    &:last-child
+        margin-right: 0
+
+    &:hover
+        box-shadow: 0 0 8px 1px #2f80eda1;
+.profile-section-top__connect
+    display flex
+.profile-section-top--right
+    display flex
+    align-items: center
+.section-contacts--items
+    display flex
+    margin-bottom: 25px
+    &:last-child
+        margin-bottom: 0
+    .icon
+        size(17px)
+        fill: #2F80ED
+        margin-right: 10px
+    span
+        font-family: RB400
+        font-size: 14px
+.section-title-v1
+    font-family: MS600
+    font-size: 15px
+    color: #272727
+    margin-bottom: 25px
+.height-vh
+    height calc(100vh - 220px)
+
+.button-style-blue
+    display flex
+    justify-content: center
+    align-items: center
+    background-color: #2F80ED
+    border-radius: 10px
+    box-shadow: 0px 0px 15px rgba(47, 128, 237, 0.4);
+    color: #fff
+    font-family: MS600
+    font-size: 13px
+
+
+.w-140
+    width 140px
+.h-44
+    height 44px
+.s-120
+    size(120px)
+.profile-chnge-img
+    position: absolute
+    left: 0
+    right 0
+    top: 0
+    bottom: 0
+    line-height: 0
+    opacity 0
+    width 100%
+    cursor pointer
+    z-index 2
+
+.profile-section-top__img-change
+    &:hover
+        .profile-change-placeholder
+            opacity 1
+.profile-change-placeholder
+    display flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0
+    right 0
+    top: 0
+    bottom: 0
+    line-height: 0
+    background-color: rgba(0,0,0,0.5)
+    width 100%
+    border-radius: 10px
+    opacity 0
+    transition: all linear .2s
+
+    .icon
+        size(30px)
+        margin-bottom: 13px
+        fill: #fff
+    span
+        color #fff
+        font-family: RB400
+        font-size: 13px
+.bb-0
+    border-bottom: 0
+.section-lk-input--wrapper
+    display flex
+    flex-direction: column
+    label
+        font-family: RT400
+        font-size: 13px
+        color: #272727
+.section-lk-input
+    background-color: #F4F4F4
+    border none
+    border-radius: 5px
+    font-family: RB400
+    font-size: 13px
+    color: rgba(39,39,39,0.6)
+    height 46px
+    padding: 14px
+    &::placeholder
+        color: rgba(39,39,39,0.3)
+.lk-inputs--cols
+    margin-bottom: 30px
+.show-in-all-time__select
+    position relative
+    display flex
+    cursor pointer
+    justify-content: space-between
+    align-items: center
+    width 120px
+    margin-left: 5px
+
+    .icon
+        size(11px)
+        fill: #272727
+    span
+        font-family: RT300
+        font-size: 14px
+        color rgba(39,39,39,0.6)
+
+.show-in-all-time__select--list
+    position: absolute
+    display none
+    right 0
+    left 0
+    top: 50px
+    background-color: #fff
+    border-radius: 10px
+    padding: 15px
+    z-index 2
+    box-shadow: 0 0 3px 3px #3a3a3a17;
+    li
+        font-family: RT300
+        cursor pointer
+        font-size: 14px
+        color #272727
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+.show-sort
+    display flex
+    align-items: center
+.p-15
+    padding: 15px
+.show-in-all-time
+    font-family: RT300
+    font-size: 14px
+    color #272727
+.p-20
+    padding: 20px
+
+.lk-table-v1
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+    thead
+        th
+            border-bottom: 1px solid rgba(39,39,39,0.1);
+            padding: 10px 20px
+            font-family: RT300
+            font-size: 14px
+            color rgba(39,39,39,0.6)
+    tbody
+        tr
+            td
+                padding: 10px 20px
+                font-family: RT300
+                font-size: 14px
+                color #272727
+                .lk-table-date-time
+
+                    span
+                        margin-left: 13px
+                        color rgba(39,39,39,0.6)
+                .lk-table-price
+                    font-family: RT400
+                    color #F43930
+            &:nth-child(2n)
+                background-color: #F9F9F9
+.lk-table-v2
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+    th
+        font-family: MS600
+        font-size: 12px
+        color #272727
+    .lk-table-name-item
+        display flex
+        align-items: center
+        font-family: MS600
+        font-size: 13px
+        color #272727
+        span
+            display flex
+            justify-content: center
+            align-items: center
+            text-align: center
+            border-radius: 5px 10px;
+            background-color: #2F80ED
+            size(30px)
+            min-width 30px
+            color #fff
+            margin-left: 40px
+    .lk-table-date-item,.lk-table-status
+        font-family: RT300
+        font-size: 15px
+        color: #272727
+    td
+        background-color: #F9F9F9
+        padding: 12px 15px
+
+.lk-table-v1--wrap
+    margin: 0 -20px
+.panel-flex
+    display flex
+    flex-direction: column
+.relative-block
+    display flex
+    justify-content: space-between
+    width 100%
+    align-items: center
+
+.panel-toggle--wrapper
+    display none
+    width 100%
+.panel-toggle--button
+    display flex
+    justify-content: center
+    align-items: center
+    size(34px)
+    cursor pointer
+    background-color: rgba(39,39,39,0.05)
+    border-radius: 5px 10px;
+    .icon
+        size(11px)
+        fill: #B4B4B4
+.section-lk-input-flex
+    display flex
+    justify-content: space-between
+    align-items: center
+    position relative
+    cursor pointer
+.section-lk-input-flex.active
+    .section-lk-input--arrow
+        .icon
+            transform: rotate(180deg)
+.section-lk-input--arrow
+    cursor pointer
+    .icon
+        size(11px)
+        fill: #272727
+.section-lk-select-list
+    position: absolute
+    display none
+    left 0
+    right 0
+    top: 60px
+    bottom: 0
+    background-color: #fff
+    border-radius: 10px
+    padding: 15px
+    z-index 2
+    height max-content
+    width 100%
+    box-shadow: 0 0 3px 3px rgba(58,58,58,0.09);
+    li
+        font-family: RT300
+        font-size: 13px
+        color: #272727
+        margin-bottom: 10px
+        cursor pointer
+        transition: all linear .2s
+        &:last-child
+            margin-bottom: 0
+        &:hover
+            color #2F80ED
+.section-lk-input--date
+    display flex
+    justify-content: space-between
+    .section-lk-input--date__icon
+        position relative
+        width: 48%
+    .section-lk-input
+        width 100%
+.date-start,.date-end
+    text-align: center
+.section-lk-input--date__icon--block
+    absolute-center()
+    display flex
+    left auto
+    right 0
+    pointer-events: none
+    .icon
+        size(20px)
+        fill: #4a4848;
+
+.panel-toggle
+    border-bottom: 1px solid rgba(39,39,39,0.1)
+    border-top: 1px solid rgba(39,39,39,0.1)
+.panel-buttons
+    display: flex
+.button-style-blue,.button-style-black
+    padding: 12px 25px
+    cursor pointer
+.button-style-black
+    background-color: #272727
+    border-radius: 10px
+    font-family: MS500
+    font-size: 13px
+    color: #fff
+.w-100px
+    width 100px
+.w-mc
+    width max-content
+.mb-30
+    margin-bottom: 30px
+.panel-toggle-bottom
+    display flex
+    justify-content: space-between
+    align-items: center
+.panel-settings
+    .icon
+        size(17px)
+        fill: #000
+.support-request
+    display flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid rgba(39,39,39,0.1)
+    padding-bottom: 20px
+.fs-18
+    font-size: 18px
+.popup-w-830
+    max-width: 830px
+.form-title
+    font-family: MS600
+    font-size: 24px
+    color: #272727
+    margin-bottom: 40px
+.modal-content
+    padding: 30px
+.popup-radio-input
+    display none
+.popup-radio-input-dot
+    size(15px)
+    border: 1px solid rgba(39, 39, 39, 0.1);
+    border-radius: 50%
+    margin-right: 10px
+.popup-radio-input--wrap label
+    display flex
+    align-items: center
+    cursor pointer
+    span
+        font-family: RT300
+        font-size: 14px
+        color: rgba(39,39,39,0.6)
+.popup-radio-input--wrap.checked
+    .popup-radio-input-dot
+        background-color: #2F80ED
+        box-shadow: 0 0 0 3px #82B3F4
+.popup-middle
+    margin-bottom: 40px
+.section-lk-textarea
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik 400', sans-serif;
+    font-size: 13px;
+    color: rgba(39,39,39,0.6);
+    padding: 14px;
+.load-files
+    position: relative
+    width max-content
+    margin-right: 20px
+    margin-bottom: 20px
+    .icon
+        size(20px)
+        fill: #fff
+        margin-right: 10px
+    span
+        font-family: MS600
+        font-size: 13px
+        color: #fff
+    input
+        position: absolute
+        cursor pointer
+        right 0
+        left 0
+        top: 0
+        bottom: 0
+        line-height: 0
+        opacity 0
+        width 100%
+.gogocar-gray-icons
+    .icon
+        size(24px)
+        margin-right: 10px
+.personal-loaded--file
+    display flex
+    align-items: center
+    background-color: rgba(39,39,39,0.05)
+    border-radius: 5px
+    padding: 9px 14px
+    margin-right: 20px
+    margin-bottom: 20px
+.personal-loaded--file__name
+    font-family: RT400
+    font-size: 13px
+    color: rgba(39,39,39,0.6)
+.popup-files--wrap
+    margin: 0
+.load-more-table
+    font-family: MS600
+    font-size: 15px
+    color: #2F80ED
+    text-align: center
+    width 100%
+    cursor pointer
+    margin-top: 30px
+.chats-dots
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    background-color: rgba(39,39,39,0.05);
+    border-radius: 5px 10px;
+    .icon
+        size(20px)
+        fill: #272727
+.section-dialog
+    height calc(100vh - 140px)
+.chats-top
+    display flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid rgba(39,39,39,0.1)
+    padding 20px 0 15px 0
+    margin: 0px 15px
+    margin-bottom: 15px
+
+.chats-dialogs
+    height 100%
+.chats-bottom-search
+    position relative
+    margin: 0 15px
+    margin-bottom: 15px
+.chats-search
+    width 100%
+.chats-bottom-users--left
+    size(50px)
+    border-radius: 10px
+    margin-right: 15px
+    background-repeat: no-repeat
+    background-size: cover
+.chats-bottom-users--item__top
+    display flex
+    align-items: center
+    margin-bottom: 18px
+.chats-bottom-users--right__name
+    font-family: MS600
+    font-size: 14px
+    color: #272727
+    margin-bottom: 6px
+.chats-bottom-users--right__theme
+    font-family: RT400
+    font-size: 12px
+    color: #AFB2B5
+.chats-bottom-users--item__bottom
+    display flex
+    align-items: center
+    justify-content: space-between
+.chats-bottom-users--item__msg
+    font-family: RT400
+    font-size: 12px
+    color: #AFB2B5
+.chats-bottom-users--item__notif
+    background-color: #2F80ED
+    box-shadow: 0px 0px 5px rgba(47, 128, 237, 0.5)
+    border-radius: 50%
+    size(17px)
+    color: #fff
+    font-family: MS500
+    font-size: 12px
+    display flex
+    justify-content: center
+    align-items: center
+.chats-bottom-users--item
+    padding: 20px 15px
+    cursor pointer
+    &:hover
+        background-color: #F9F9F9
+
+.chats-bottom-users--list
+    overflow-y: auto
+    height: calc(100vh - 285px);
+    margin-right: 5px
+.chats-bottom-users--list::-webkit-scrollbar
+  width: 5px;
+  border-radius: 5px;
+.chats-bottom-users--list::-webkit-scrollbar-button
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+.chats-bottom-users--list::-webkit-scrollbar-thumb
+  border-radius: 10px;
+  background-color: #2F80ED
+.chats-bottom-users--list::-webkit-scrollbar-track
+  margin-right: 5px;
+.chats-bottom-users--list::-webkit-scrollbar-track-piece
+  border-radius: 10px;
+  background: rgba(255,255,255,.05);
+.popup-checked--item
+    display flex
+    align-items: center
+    background-color #F9F9F9
+    border-radius: 5px
+    padding: 14px 15px
+    cursor pointer
+    margin-bottom: 15px
+
+.popup-checked-del--input
+    display none
+.popup-checked-del--dot
+    size(15px)
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    border-radius: 50%
+    margin-right: 15px
+.popup-checked--item.checked
+    .popup-checked-del--dot
+        size(15px)
+        box-shadow: 0 0 0 3px #80B0F2
+        background-color: #4F93EF
+        border: 1px solid #4F93EF
+.popup-checked-del__img
+    size(25px)
+    margin-right: 15px
+.popup-checked-del__text
+    font-family: RT400
+    font-size: 13px
+    color: #272727
+.delete-choise-chat-msg
+    display flex
+    justify-content: center
+    align-items: center
+    background: #2F80ED;
+    box-shadow: 0px 0px 15px rgba(76, 166, 75, 0.4);
+    border-radius: 10px
+    width 100%
+    max-width 170px
+    margin: 0 auto
+    height 44px
+    font-family: MS600
+    font-size: 14px
+    color: #fff
+    cursor pointer
+
+.sandwich-menu--icon
+    display none
+    .icon
+        size(34px)
+        fill: #272727
+.profile-section-top__connect--mobile
+    display none
+.m-0-auto
+    margin: 0 auto
+.mobile-save-button
+    display none
+
+.panel-mobile
+    display none
+.chat-container-header--info__mobile
+    display none

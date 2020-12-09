@@ -1,0 +1,24 @@
+#popup-obr2.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-w-830(role='document')
+        form.modal-content
+            .popup-header
+                .form-title Создание обращения (Шаг 2)
+
+            .popup-middle
+                .col-xl-12.col-lg-12.col-md-12.col-sm-12.lk-inputs--cols.p-0 
+                        .section-lk-input--wrapper 
+                            label Заголовок:
+                            textarea.section-lk-textarea(cols="5" rows="8" placeholder="Подробно опишите возникшую проблему...")
+                .popup-files--wrap.row
+                    .button-style-black.h-44.load-files
+                        +icon('clip')
+                        span Добавить файл
+                        input(type="file" multiple="multiple")
+                                
+                           
+
+            .popup-bottom
+                .panel-buttons
+                    .button-style-black.h-44.mr-3(data-dismiss="modal") Отмена
+                    .button-style-blue.h-44 Далее
+                    

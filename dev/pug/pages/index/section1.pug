@@ -1,0 +1,36 @@
+section.section1.bg-white.bg-border.p-30.height-vh
+    .section-container 
+        .section-top 
+            .profile-section-top--left 
+                .profile-section-top__img(style="background-image:url('static/img/general/ava.png')")
+
+                .profile-section-top__info
+                    .profile-section-top__name Михаил Кокорин
+                    .profile-section-top__status В сервисе 1 год 2 месяца
+                    .profile-section-top__connect.profile-section-top__connect--mobile 
+                        a.profile-section-top__connect--item(href="/") 
+                            +icon('phone')
+                        a.profile-section-top__connect--item(href="/")  
+                            +icon('message2')  
+                        a.profile-section-top__connect--item(href="/")  
+                            +icon('psw')       
+            .profile-section-top--right 
+                .profile-section-top__connect 
+                    a.profile-section-top__connect--item(href="/") 
+                        +icon('phone')
+                    a.profile-section-top__connect--item(href="/")  
+                        +icon('message2')  
+                         
+
+        .section-bottom
+            .section-title-v1 Контакты
+            a.section-contacts--items(href="/")
+                +icon('mail')
+                span Kokorin@mail.com
+            a.section-contacts--items(href="/")
+                +icon('phone2')
+                span 8 (999) 123 45 67
+            .section-contacts--items
+                +icon('map')
+                span Москва, Россия      
+    
