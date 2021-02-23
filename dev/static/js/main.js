@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $('[data-dismiss="modal"][data-target]').click(function () {
+
+        if($('.modal').hasClass('show')){
+            $('body').addClass('modal-open-2');
+        } else {
+            $('body').removeClass('modal-open-2');
+        }
+
+    });
     $("#acc-img").change(function () {
         if (this.files && this.files[0]) {
             var reader = new FileReader();
@@ -101,23 +110,31 @@ $(document).ready(function () {
 
 
                  if(file_format == 'pdf'){
-                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-pdf"><use xlink:href="/static/img/svg/symbol/sprite.svg#pdf"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span></div>')
+                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-pdf"><use xlink:href="/static/img/svg/symbol/sprite.svg#pdf"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span><div class="load-file--close"><svg class="icon icon-close"><use xlink:href="/static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
                  } else if(file_format == 'png'){
-                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-png"><use xlink:href="/static/img/svg/symbol/sprite.svg#png"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span></div>')
+                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-png"><use xlink:href="/static/img/svg/symbol/sprite.svg#png"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span><div class="load-file--close"><svg class="icon icon-close"><use xlink:href="/static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
                  } else if(file_format == 'jpg' || 'jpeg'){
-                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-jpg"><use xlink:href="/static/img/svg/symbol/sprite.svg#jpg"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span></div>')
+                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-jpg"><use xlink:href="/static/img/svg/symbol/sprite.svg#jpg"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span><div class="load-file--close"><svg class="icon icon-close"><use xlink:href="/static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
                  } else if(file_format == 'docx'){
-                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-doc"><use xlink:href="/static/img/svg/symbol/sprite.svg#doc"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span></div>')
+                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-doc"><use xlink:href="/static/img/svg/symbol/sprite.svg#doc"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span><div class="load-file--close"><svg class="icon icon-close"><use xlink:href="/static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
                  } else if(file_format == 'zip'){
-                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-zip"><use xlink:href="/static/img/svg/symbol/sprite.svg#zip"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span></div>')
+                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-zip"><use xlink:href="/static/img/svg/symbol/sprite.svg#zip"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span><div class="load-file--close"><svg class="icon icon-close"><use xlink:href="/static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
                  } else if(file_format == 'txt'){
-                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-txt"><use xlink:href="/static/img/svg/symbol/sprite.svg#txt"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span></div>')
+                     $('.popup-files--wrap').append('<div class="personal-loaded--file"><div class="gogocar-gray-icons personal-icon-loaded--appeal"><svg class="icon icon-txt"><use xlink:href="/static/img/svg/symbol/sprite.svg#txt"></use></svg></div><span class="personal-loaded--file__name">' + substr + '</span><div class="load-file--close"><svg class="icon icon-close"><use xlink:href="/static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
                  }
              });
 
          });
 
      });
+
+    $('.popup-files--wrap').on('click','.load-file--close',function (e) {
+        e.preventDefault();
+        $(this).parent().remove();
+        array_files = [];
+
+    });
+
     //  $(".load-files").before($(".personal-loaded--file"));
     //  $('.personal-loaded--file__icon').click(function () {
     //      $('.popup-files--wrap').remove();
