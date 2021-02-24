@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Чат</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header> 
+        <div class="sandwich-menu--icon"> 
+          <svg class="icon icon-menu ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+          </svg>
+        </div>
+        <div class="header-left-side"> <a class="header-logo" href="/">
+            <svg class="icon icon-logo ">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+            </svg></a></div>
+        <div class="header-right-side"><a class="header-message" href="/">
+            <svg class="icon icon-message ">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#message"></use>
+            </svg></a><a class="header-profile" href="/">
+            <div class="header-profile--img" style="background-image:url('static/img/general/profile.png');">  </div>
+            <div class="header-profile-name">Михаил Кокорин </div></a>
+          <div class="header-logout">
+            <svg class="icon icon-logout ">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#logout"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="content-wrapper content-wrapper--mobile">
+          <sidebar class="col-xl-2_5 col-lg-3 col-md-3 col-sm-6 pl-0 sidebar-fixed">
+            <div class="sidebar-content bg-white"> 
+              <ul class="sidebar-menu-list"> <a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-user ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#user"></use>
+                  </svg><span>Профиль</span></a><a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-money ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#money"></use>
+                  </svg><span>Счет</span></a><a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-info ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#info"></use>
+                  </svg><span>Поддержка</span></a><a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-chat ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#chat"></use>
+                  </svg><span>Чат    </span></a></ul>
+              <ul class="social-links--list row m-0"><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-facebook ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                  </svg></a><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-vk ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-ok ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ok"></use>
+                  </svg></a><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-insta ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#insta"></use>
+                  </svg></a></ul>
+            </div>
+          </sidebar>
+          <section class="section-dialog col-xl-2_5 col-lg-3 col-md-3 col-sm-12">
+            <div class="chats-dialogs bg-white bg-border">
+              <div class="chats-top">
+                <div class="section-title-v1 mb-0">Диалоги</div>
+                <div class="chats-dots">
+                  <svg class="icon icon-dots ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#dots"></use>
+                  </svg>
+                  <ul class="chats-dots-menu">
+                    <li class="chats-dots--item">Меню 1</li>
+                    <li class="chats-dots--item">Меню 2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="chats-bottom">
+                <div class="chats-bottom-search">
+                  <input class="section-lk-input chats-search" type="text" placeholder="Имя или № заказа">
+                  <div class="section-lk-input--date__icon--block">
+                    <svg class="icon icon-search ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="chats-bottom-users--list">
+                  <div class="chats-bottom-users--item">
+                    <div class="chats-bottom-users--item__top">
+                      <div class="chats-bottom-users--left" style="background-image:url('./static/img/general/ava.png');"></div>
+                      <div class="chats-bottom-users--right">
+                        <div class="chats-bottom-users--right__name">Алексей Матвеев</div>
+                        <div class="chats-bottom-users--right__theme">Оформление ВНЖ</div>
+                      </div>
+                    </div>
+                    <div class="chats-bottom-users--item__bottom">
+                      <div class="chats-bottom-users--item__msg">Leo tristique nisi condimentum...</div>
+                      <div class="chats-bottom-users--item__notif">1</div>
+                    </div>
+                  </div>
+                  <div class="chats-bottom-users--item">
+                    <div class="chats-bottom-users--item__top">
+                      <div class="chats-bottom-users--left" style="background-image:url('./static/img/general/ava.png');"></div>
+                      <div class="chats-bottom-users--right">
+                        <div class="chats-bottom-users--right__name">Алексей Матвеев</div>
+                        <div class="chats-bottom-users--right__theme">Оформление ВНЖ</div>
+                      </div>
+                    </div>
+                    <div class="chats-bottom-users--item__bottom">
+                      <div class="chats-bottom-users--item__msg">Leo tristique nisi condimentum...</div>
+                      <div class="chats-bottom-users--item__notif">1</div>
+                    </div>
+                  </div>
+                  <div class="chats-bottom-users--item">
+                    <div class="chats-bottom-users--item__top">
+                      <div class="chats-bottom-users--left" style="background-image:url('./static/img/general/ava.png');"></div>
+                      <div class="chats-bottom-users--right">
+                        <div class="chats-bottom-users--right__name">Алексей Матвеев</div>
+                        <div class="chats-bottom-users--right__theme">Оформление ВНЖ</div>
+                      </div>
+                    </div>
+                    <div class="chats-bottom-users--item__bottom">
+                      <div class="chats-bottom-users--item__msg">Leo tristique nisi condimentum...</div>
+                      <div class="chats-bottom-users--item__notif">1</div>
+                    </div>
+                  </div>
+                  <div class="chats-bottom-users--item">
+                    <div class="chats-bottom-users--item__top">
+                      <div class="chats-bottom-users--left" style="background-image:url('./static/img/general/ava.png');"></div>
+                      <div class="chats-bottom-users--right">
+                        <div class="chats-bottom-users--right__name">Алексей Матвеев</div>
+                        <div class="chats-bottom-users--right__theme">Оформление ВНЖ</div>
+                      </div>
+                    </div>
+                    <div class="chats-bottom-users--item__bottom">
+                      <div class="chats-bottom-users--item__msg">Leo tristique nisi condimentum...</div>
+                      <div class="chats-bottom-users--item__notif">1</div>
+                    </div>
+                  </div>
+                  <div class="chats-bottom-users--item">
+                    <div class="chats-bottom-users--item__top">
+                      <div class="chats-bottom-users--left" style="background-image:url('./static/img/general/ava.png');"></div>
+                      <div class="chats-bottom-users--right">
+                        <div class="chats-bottom-users--right__name">Алексей Матвеев</div>
+                        <div class="chats-bottom-users--right__theme">Оформление ВНЖ</div>
+                      </div>
+                    </div>
+                    <div class="chats-bottom-users--item__bottom">
+                      <div class="chats-bottom-users--item__msg">Leo tristique nisi condimentum...</div>
+                      <div class="chats-bottom-users--item__notif">1</div>
+                    </div>
+                  </div>
+                  <div class="chats-bottom-users--item">
+                    <div class="chats-bottom-users--item__top">
+                      <div class="chats-bottom-users--left" style="background-image:url('./static/img/general/ava.png');"></div>
+                      <div class="chats-bottom-users--right">
+                        <div class="chats-bottom-users--right__name">Алексей Матвеев</div>
+                        <div class="chats-bottom-users--right__theme">Оформление ВНЖ</div>
+                      </div>
+                    </div>
+                    <div class="chats-bottom-users--item__bottom">
+                      <div class="chats-bottom-users--item__msg">Leo tristique nisi condimentum...</div>
+                      <div class="chats-bottom-users--item__notif">1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section1 col-xl-7_5 col-lg-6 col-md-6 col-sm-12 pr-0 chats-fixed">
+            <div class="section-container" style="height:100%;">
+              <div class="col-xl-12 col-lg-12 p-0 personal-chat-container personal-fixed-chat--container" style="height:100%;">
+                <div class="chat-container-block" style="height:100%;">
+                  <div class="chat-container-header">
+                    <div class="gogocar-go-back">
+                      <svg class="icon icon-down-arrow ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="chat-container-header--img" style="background-image:url('./static/img/general/chat.png');"></div>
+                    <div class="chat-container-header--info__option">
+                      <div class="chat-container-header--info chat-container-header--info__desk">
+                        <div class="chat-container-header--name">Запрос №2 “Не работает форма связи”</div>
+                        <div class="chat-container-header--desc">Агент поддержки:<a href="/">Андрей Юдин</a></div>
+                      </div>
+                      <div class="chat-container-header--info chat-container-header--info__mobile">
+                        <div class="chat-container-header--name">Запрос №2</div>
+                        <div class="chat-container-header--desc"><a href="/">Андрей Юдин</a></div>
+                      </div>
+                      <div class="chat-container-header--option--left--wrap">
+                        <div class="chat-container-header--option-delete__panel">
+                          <div class="chat-container-header--option-delete--back gogocar-gray-icons">
+                            <svg class="icon icon-back-arrow ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#back-arrow"></use>
+                            </svg>
+                          </div>
+                          <div class="chat-delete-out-msg">
+                            <div class="chat-text-delete__message">Удалить сообщения?</div>
+                            <div class="chat-container-option--message--wrap">
+                              <div class="chat-container-option--message--item chat-choise-delet-msg">
+                                <svg class="icon icon-delete-red ">
+                                  <use xlink:href="static/img/svg/symbol/sprite.svg#delete-red"></use>
+                                </svg><span>Удалить</span>
+                              </div>
+                              <div class="chat-container-option--message--item--cancel">Отмена</div>
+                            </div>
+                          </div>
+                          <div class="chat-container-header--option-delete--delete gogocar-gray-icons">
+                            <svg class="icon icon-delete2 ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#delete2"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="chat-container-header--option chat-container-option-dot gogocar-gray-icons">
+                          <svg class="icon icon-dots ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#dots"></use>
+                          </svg>
+                        </div>
+                        <div class="chat-container-header--delete__message">
+                          <div class="chat-container-header--delete__message--item close-archive-chat">
+                            <svg class="icon icon-folder ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#folder"></use>
+                            </svg><span>Архивировать</span>
+                          </div>
+                          <div class="chat-container-header--delete__message--item close-delete-chat">
+                            <svg class="icon icon-checked ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#checked"></use>
+                            </svg><span>Выбрать сообщение</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-container-main" style="height: calc(100vh - 300px);">
+                    <div class="chat-container-main--info" style="height: 100%;max-height: 100%;">
+                      <div class="chat-container-main-last--date">6 Июня</div>
+                      <div class="chat-container-people-messages chat-container-message-out">
+                        <div class="chat-container-message--wrapper">
+                          <div class="chat-container--message--status">
+                            <svg class="icon icon-looked ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#looked"></use>
+                            </svg>
+                          </div>
+                          <div class="chat-container-message--wrap">
+                            <div class="chat-container-message--file-type">
+                              <div class="chat-container-message--format">
+                                <svg class="icon icon-png ">
+                                  <use xlink:href="static/img/svg/symbol/sprite.svg#png"></use>
+                                </svg>
+                              </div>
+                              <div class="chat-container-message--format-text"><span class="chat-container-message--format-name">Фото.png</span><span class="chat-container-message--format-time">14:02</span></div>
+                            </div><a class="chat-container-message--format-download gogocar-gray-icons" href="/" download>
+                              <svg class="icon icon-download ">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#download"></use>
+                              </svg></a>
+                          </div>
+                          <div class="chat-container-message--wrap--delete__check--wrap">
+                            <div class="chat-container-message--wrap--delete__check"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-container-people-messages chat-container-message-out">
+                        <div class="chat-container-message--wrapper">
+                          <div class="chat-container--message--status">
+                            <svg class="icon icon-looked ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#looked"></use>
+                            </svg>
+                          </div>
+                          <div class="chat-container-message--wrap">
+                            <div class="chat-container-message--info__message">
+                              <div class="chat-container-message--date__name"><span>14:02</span>
+                                <div class="chat-container-message--name--wrap">
+                                  <div class="chat-container-message--name--button">
+                                    <svg class="icon icon-down-arrow ">
+                                      <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="chat-container-option--message chat-show-message-out chat-show-message-out--mobile">
+                                    <div class="chat-container-option--message--wrap">
+                                      <div class="chat-container-option--message--wrap--buttons">
+                                        <div class="chat-container-option--message--item chat-change-message">
+                                          <svg class="icon icon-pen ">
+                                            <use xlink:href="static/img/svg/symbol/sprite.svg#pen"></use>
+                                          </svg><span>Изменить</span>
+                                        </div>
+                                        <div class="chat-container-option--message--item chat-delete-message">
+                                          <svg class="icon icon-delete-red ">
+                                            <use xlink:href="static/img/svg/symbol/sprite.svg#delete-red"></use>
+                                          </svg><span>Удалить</span>
+                                        </div>
+                                      </div>
+                                      <div class="chat-container-option--message--item--cancel">Отмена</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-container-message--name">Татьяна Гусева</div>
+                                </div>
+                              </div>
+                              <p class="chat-container--message">In orci pulvinar metus erat.</p>
+                            </div>
+                            <div class="chat-container-message--img" style="background-image:url('./static/img/general/ava.png');"></div>
+                          </div>
+                          <div class="chat-container-message--wrap--delete__check--wrap">
+                            <div class="chat-container-message--wrap--delete__check"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-container-people-messages chat-container-message-in">
+                        <div class="chat-container-message--wrapper">
+                          <div class="chat-container-message--wrap">
+                            <div class="chat-container-message--info__message">
+                              <div class="chat-container-message--date__name"><span>14:02</span>
+                                <div class="chat-container-message--name--wrap">
+                                  <div class="chat-container-message--name--button">
+                                    <svg class="icon icon-down-arrow ">
+                                      <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="chat-container-option--message chat-show-message-in chat-show-message-in--mobile">
+                                    <div class="chat-container-option--message--wrap">
+                                      <div class="chat-container-option--message--item chat-answer-message">
+                                        <svg class="icon icon-share ">
+                                          <use xlink:href="static/img/svg/symbol/sprite.svg#share"></use>
+                                        </svg><span>Ответить</span>
+                                      </div>
+                                      <div class="chat-container-option--message--item--cancel">Отмена</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-container-message--name">Матвей Федотов</div>
+                                </div>
+                              </div>
+                              <p class="chat-container--message">In orci pulvinar metus erat.In orci pulvinar metus erat.</p>
+                            </div>
+                            <div class="chat-container-message--img" style="background-image:url('./static/img/general/ava.png');"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-container-people-messages chat-container-message-out">
+                        <div class="chat-container-message--wrapper">
+                          <div class="chat-container--message--status">
+                            <svg class="icon icon-not-looked ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#not-looked"></use>
+                            </svg>
+                          </div>
+                          <div class="chat-container-message--wrap">
+                            <div class="chat-container-message--info__message">
+                              <div class="chat-container-message--date__name"><span>14:02</span>
+                                <div class="chat-container-message--name--wrap">
+                                  <div class="chat-container-message--name--button">
+                                    <svg class="icon icon-down-arrow ">
+                                      <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="chat-container-option--message chat-show-message-out chat-show-message-out--mobile">
+                                    <div class="chat-container-option--message--wrap">
+                                      <div class="chat-container-option--message--wrap--buttons">
+                                        <div class="chat-container-option--message--item chat-change-message">
+                                          <svg class="icon icon-pen ">
+                                            <use xlink:href="static/img/svg/symbol/sprite.svg#pen"></use>
+                                          </svg><span>Изменить</span>
+                                        </div>
+                                        <div class="chat-container-option--message--item chat-delete-message">
+                                          <svg class="icon icon-delete-red ">
+                                            <use xlink:href="static/img/svg/symbol/sprite.svg#delete-red"></use>
+                                          </svg><span>Удалить</span>
+                                        </div>
+                                      </div>
+                                      <div class="chat-container-option--message--item--cancel">Отмена</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-container-message--name">Татьяна Гусева</div>
+                                </div>
+                              </div>
+                              <p class="chat-container--message">In orci pulvinar metus erat.</p>
+                            </div>
+                            <div class="chat-container-message--img" style="background-image:url('./static/img/general/ava.png');"></div>
+                          </div>
+                          <div class="chat-container-message--wrap--delete__check--wrap">
+                            <div class="chat-container-message--wrap--delete__check"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-container-people-messages chat-container-message-in">
+                        <div class="chat-container-message--wrapper">
+                          <div class="chat-container-message--wrap">
+                            <div class="chat-container-message--file-type">
+                              <div class="chat-container-message--format">
+                                <svg class="icon icon-png ">
+                                  <use xlink:href="static/img/svg/symbol/sprite.svg#png"></use>
+                                </svg>
+                              </div>
+                              <div class="chat-container-message--format-text"><span class="chat-container-message--format-name">Фото.png</span><span class="chat-container-message--format-time">14:02</span></div>
+                            </div><a class="chat-container-message--format-download gogocar-gray-icons" href="/" download>
+                              <svg class="icon icon-download ">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#download"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-container-people-messages chat-container-message-in">
+                        <div class="chat-container-message--wrapper">
+                          <div class="chat-container-message--wrap">
+                            <div class="chat-container-message--info__message">
+                              <div class="chat-container-message--date__name"><span>14:02</span>
+                                <div class="chat-container-message--name--wrap">
+                                  <div class="chat-container-message--name--button">
+                                    <svg class="icon icon-down-arrow ">
+                                      <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="chat-container-option--message chat-show-message-in chat-show-message-in--mobile">
+                                    <div class="chat-container-option--message--wrap">
+                                      <div class="chat-container-option--message--item chat-answer-message">
+                                        <svg class="icon icon-share ">
+                                          <use xlink:href="static/img/svg/symbol/sprite.svg#share"></use>
+                                        </svg><span>Ответить</span>
+                                      </div>
+                                      <div class="chat-container-option--message--item--cancel">Отмена</div>
+                                    </div>
+                                  </div>
+                                  <div class="chat-container-message--name">Матвей Федотов</div>
+                                </div>
+                              </div>
+                              <p class="chat-container--message">In orci pulvinar metus erat.In orci pulvinar metus erat.</p>
+                            </div>
+                            <div class="chat-container-message--img" style="background-image:url('./static/img/general/ava.png');"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-container-footer">
+                    <div class="chat-container-footer-wrap--inputs">
+                      <div class="chat-container--edit--message" id="chat-edit-msg">
+                        <div class="chat-container--edit--wrap">
+                          <div class="chat-container--edit--title">Редактировать</div>
+                          <div class="chat-container--edit--text" id="chat-edit-text">Тут будет проверочный текст</div>
+                        </div>
+                        <div class="chat-container--edit--close" id="chat-edit-close">
+                          <svg class="icon icon-close ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="chat-container--edit--message--file--add">
+                        <div class="personal-appear--file--wrap row" id="chat-file-add"></div>
+                        <div class="personal-loaded--file__icon">
+                          <svg class="icon icon-close ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="chat-container-footer--file__input">
+                        <svg class="icon icon-clip ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#clip"></use>
+                        </svg>
+                        <input class="chat-container-footer--input__file" type="file" multiple>
+                      </div>
+                      <div class="chat-container-footer--text__input">
+                        <div class="chat-container-footer--input__text" id="chat-get-text" contenteditable="true" role="textbox" aria-multiline="true"></div>
+                        <div class="chat-container-footer--placeholder">Cообщение...</div>
+                      </div>
+                      <div class="chat-container-footer--smiles">
+                        <svg class="icon icon-smile ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#smile"></use>
+                        </svg>
+                      </div>
+                      <div class="chat-container-footer--emoji--list row"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji1.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji2.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji3.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji4.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji5.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji6.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji7.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji8.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji9.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji10.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji11.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji12.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji13.png" alt="emoji"><img class="cab-chat-emoji" src="static/img/content/emoji/emoji14.png" alt="emoji"></div>
+                      <button class="chat-container-footer--submit">
+                        <svg class="icon icon-direct ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#direct"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal fade" id="popup-obr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-w-830" role="document">
+            <form class="modal-content">
+              <div class="popup-header">
+                <div class="form-title">Создание обращения (Шаг 1)</div>
+              </div>
+              <div class="popup-middle">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 lk-inputs--cols p-0"> 
+                  <div class="section-lk-input--wrapper"> 
+                    <label>Заголовок:</label>
+                    <input class="section-lk-input" type="text" placeholder="Укажите заголовок обращения">
+                  </div>
+                </div>
+                <div class="popup-radio-inputs"> 
+                  <div class="popup-radio-input--wrap">
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Не могу оформить заказ</span>
+                    </label>
+                  </div>
+                  <div class="popup-radio-input--wrap"> 
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Не работает форма обратной связи</span>
+                    </label>
+                  </div>
+                  <div class="popup-radio-input--wrap"> 
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Не приходит код для подтверждения </span>
+                    </label>
+                  </div>
+                  <div class="popup-radio-input--wrap"> 
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Другое              </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-bottom">
+                <div class="panel-buttons">
+                  <div class="button-style-black h-44 mr-3" data-dismiss="modal">Отмена</div>
+                  <div class="button-style-blue h-44" data-toggle="modal" data-dismiss="modal" data-target="#popup-obr2">Далее</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal fade" id="popup-obr2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-w-830" role="document">
+            <form class="modal-content">
+              <div class="popup-header">
+                <div class="form-title">Создание обращения (Шаг 2)</div>
+              </div>
+              <div class="popup-middle">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 lk-inputs--cols p-0"> 
+                  <div class="section-lk-input--wrapper"> 
+                    <label>Заголовок:</label>
+                    <textarea class="section-lk-textarea" cols="5" rows="8" placeholder="Подробно опишите возникшую проблему..."></textarea>
+                  </div>
+                </div>
+                <div class="popup-files--wrap row">
+                  <div class="button-style-black h-44 load-files">
+                    <svg class="icon icon-clip ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#clip"></use>
+                    </svg><span>Добавить файл</span>
+                    <input type="file" multiple="multiple">
+                  </div>
+                </div>
+              </div>
+              <div class="popup-bottom">
+                <div class="panel-buttons">
+                  <div class="button-style-black h-44 mr-3" data-dismiss="modal">Отмена</div>
+                  <div class="button-style-blue h-44">Далее</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal fade" id="popup-del-msg" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+            <div class="modal-content popup-content">
+              <div class="popup-covid--wrap popup-del-msg">
+                <h3 class="main-section--title--v2 font-size-25 mb-5">Удалить сообщения?</h3>
+                <div class="delete-chat-msg">
+                  <div class="gogocar-red-button delete-choise-chat-msg" data-dismiss="modal" aria-label="Close">Удалить</div>
+                  <div class="gogocar-gray-button" data-dismiss="modal" aria-label="Close">Отмена</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="popup-del-msg2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+            <div class="modal-content popup-content">
+              <div class="popup-covid--wrap popup-del-msg">
+                <h3 class="main-section--title--v2 font-size-25 mb-5">Оцените работу поддержки</h3>
+              </div>
+              <div class="popup-checked-ocenka"> 
+                <label class="popup-checked--item"> 
+                  <div class="popup-checked-del--dot"> </div>
+                  <input class="popup-checked-del--input" type="radio" name="del_status"><img class="popup-checked-del__img" src="./static/img/content/emoji/emoji1.png">
+                  <div class="popup-checked-del__text">Мне нравится</div>
+                </label>
+                <label class="popup-checked--item">
+                  <div class="popup-checked-del--dot"> </div>
+                  <input class="popup-checked-del--input" type="radio" name="del_status"><img class="popup-checked-del__img" src="./static/img/content/emoji/emoji3.png">
+                  <div class="popup-checked-del__text">Затрудняюсь ответить</div>
+                </label>
+                <label class="popup-checked--item"> 
+                  <div class="popup-checked-del--dot"> </div>
+                  <input class="popup-checked-del--input" type="radio" name="del_status"><img class="popup-checked-del__img" src="./static/img/content/emoji/emoji2.png">
+                  <div class="popup-checked-del__text">Недоволен командой поддержки</div>
+                </label>
+              </div>
+              <div class="delete-choise-chat-msg" data-dismiss="modal" aria-label="Close">Удалить   </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/datepicker.ru-RU.js"></script>
+  </body>
+</html>

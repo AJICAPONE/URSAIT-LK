@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Профиль (Настроить)</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header> 
+        <div class="sandwich-menu--icon"> 
+          <svg class="icon icon-menu ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+          </svg>
+        </div>
+        <div class="header-left-side"> <a class="header-logo" href="/">
+            <svg class="icon icon-logo ">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#logo"></use>
+            </svg></a></div>
+        <div class="header-right-side"><a class="header-message" href="/">
+            <svg class="icon icon-message ">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#message"></use>
+            </svg></a><a class="header-profile" href="/">
+            <div class="header-profile--img" style="background-image:url('static/img/general/profile.png');">  </div>
+            <div class="header-profile-name">Михаил Кокорин </div></a>
+          <div class="header-logout">
+            <svg class="icon icon-logout ">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#logout"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="content-wrapper">
+          <sidebar class="col-xl-2_5 col-lg-3 col-md-4 col-sm-6 pl-0 sidebar-fixed">
+            <div class="sidebar-content bg-white"> 
+              <ul class="sidebar-menu-list"> <a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-user ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#user"></use>
+                  </svg><span>Профиль</span></a><a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-money ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#money"></use>
+                  </svg><span>Счет</span></a><a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-info ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#info"></use>
+                  </svg><span>Поддержка</span></a><a class="sidebar-menu-item" href="/"> 
+                  <svg class="icon icon-chat ">
+                    <use xlink:href="static/img/svg2/symbol/sprite2.svg#chat"></use>
+                  </svg><span>Чат    </span></a></ul>
+              <ul class="social-links--list row m-0"><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-facebook ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                  </svg></a><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-vk ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-ok ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ok"></use>
+                  </svg></a><a class="social-links--item" href="/"> 
+                  <svg class="icon icon-insta ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#insta"></use>
+                  </svg></a></ul>
+            </div>
+          </sidebar>
+          <div class="col-xl-9_5 col-lg-9 col-md-8 col-sm-12 pr-0 content-container">
+            <section class="section-panel">
+              <div class="panel-main bg-white"> 
+                <div class="panel-links-list">
+                  <div class="panel-links-item" href="/">Профиль</div>
+                  <div class="panel-links-item blue-color" href="/">Настроить</div>
+                </div>
+                <div class="panel-logout">Выйти    </div>
+              </div>
+            </section>
+            <section class="section1 bg-white bg-border p-30">
+              <div class="section-container"> 
+                <div class="section-top bb-0 mb-0">
+                  <div class="profile-section-top--left"> 
+                    <div class="profile-section-top__img-change s-120" style="background-image:url('static/img/general/ava.png');">
+                      <input class="profile-chnge-img" id="acc-img" type="file">
+                      <div class="profile-change-placeholder">
+                        <svg class="icon icon-photo ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#photo"></use>
+                        </svg><span>Изменить фото</span>
+                      </div>
+                    </div>
+                    <div class="profile-section-top__info">
+                      <div class="profile-section-top__name">Михаил Кокорин</div>
+                      <div class="profile-section-top__status">В сервисе 1 год 2 месяца</div>
+                    </div>
+                  </div>
+                  <div class="profile-section-top--right"> 
+                    <div class="desk-save-button button-style-blue w-140 h-44">Сохранить</div>
+                  </div>
+                </div>
+                <div class="section-bottom">
+                  <div class="section-title-v1">Основные</div>
+                  <div class="section-lk-inputs row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols"> 
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Имя:</label>
+                        <input class="section-lk-input" type="text" placeholder="Михаил">
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols"> 
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Фамилия:</label>
+                        <input class="section-lk-input" type="text" placeholder="Кокорин">
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols">
+                      <div class="section-lk-input--wrapper">
+                        <label>Отчество:</label>
+                        <input class="section-lk-input" type="text" placeholder="Кокорин">
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols"> 
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Новый пароль:</label>
+                        <input class="section-lk-input" type="password" placeholder="*******">
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols"> 
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Email:</label>
+                        <input class="section-lk-input" type="email" placeholder="Kokorin@gmail.com">
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols"> 
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Телефон:</label>
+                        <input class="section-lk-input" type="tel" data-mask="+7 (000) 000 00 00" placeholder="+7 (999) 123 45 67">
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 lk-inputs--cols"> 
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Подтвердите пароль:</label>
+                        <input class="section-lk-input" type="password" placeholder="*******">
+                      </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 lk-inputs--cols">
+                      <div class="section-lk-input--wrapper"> 
+                        <label>Адрес:</label>
+                        <input class="section-lk-input" type="text" placeholder="Укажите ваш адрес">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-save-button button-style-blue w-140 h-44 m-0-auto">Сохранить                                                         </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="modal fade" id="popup-obr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-w-830" role="document">
+            <form class="modal-content">
+              <div class="popup-header">
+                <div class="form-title">Создание обращения (Шаг 1)</div>
+              </div>
+              <div class="popup-middle">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 lk-inputs--cols p-0"> 
+                  <div class="section-lk-input--wrapper"> 
+                    <label>Заголовок:</label>
+                    <input class="section-lk-input" type="text" placeholder="Укажите заголовок обращения">
+                  </div>
+                </div>
+                <div class="popup-radio-inputs"> 
+                  <div class="popup-radio-input--wrap">
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Не могу оформить заказ</span>
+                    </label>
+                  </div>
+                  <div class="popup-radio-input--wrap"> 
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Не работает форма обратной связи</span>
+                    </label>
+                  </div>
+                  <div class="popup-radio-input--wrap"> 
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Не приходит код для подтверждения </span>
+                    </label>
+                  </div>
+                  <div class="popup-radio-input--wrap"> 
+                    <label> 
+                      <div class="popup-radio-input-dot"></div>
+                      <input class="popup-radio-input" type="radio" name="popup_name"><span>Другое              </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-bottom">
+                <div class="panel-buttons">
+                  <div class="button-style-black h-44 mr-3" data-dismiss="modal">Отмена</div>
+                  <div class="button-style-blue h-44" data-toggle="modal" data-dismiss="modal" data-target="#popup-obr2">Далее</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal fade" id="popup-obr2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-w-830" role="document">
+            <form class="modal-content">
+              <div class="popup-header">
+                <div class="form-title">Создание обращения (Шаг 2)</div>
+              </div>
+              <div class="popup-middle">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 lk-inputs--cols p-0"> 
+                  <div class="section-lk-input--wrapper"> 
+                    <label>Заголовок:</label>
+                    <textarea class="section-lk-textarea" cols="5" rows="8" placeholder="Подробно опишите возникшую проблему..."></textarea>
+                  </div>
+                </div>
+                <div class="popup-files--wrap row">
+                  <div class="button-style-black h-44 load-files">
+                    <svg class="icon icon-clip ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#clip"></use>
+                    </svg><span>Добавить файл</span>
+                    <input type="file" multiple="multiple">
+                  </div>
+                </div>
+              </div>
+              <div class="popup-bottom">
+                <div class="panel-buttons">
+                  <div class="button-style-black h-44 mr-3" data-dismiss="modal">Отмена</div>
+                  <div class="button-style-blue h-44">Далее</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/datepicker.ru-RU.js"></script>
+  </body>
+</html>
